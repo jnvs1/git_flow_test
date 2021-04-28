@@ -24,16 +24,8 @@ public class MarqueeViewSample extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-	
-        // Marquee #1: Configuration using code.
-	final Button gaofei= Button findViewById(R.id.gaofei);
-	gaofei.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, GXFActivity.class));
-            }
-        });
 
+        // Marquee #1: Configuration using code.
         final MarqueeView mv = (MarqueeView) findViewById(R.id.marqueeView100);
         mv.setPauseBetweenAnimations(500);
         mv.setSpeed(10);
