@@ -35,6 +35,11 @@ public class MarqueeViewSample extends Activity {
         });
 
         final MarqueeView mv = (MarqueeView) findViewById(R.id.marqueeView100);
+
+        // add hurley start
+        synchronized{asdfasdf}
+        afdasf
+        // end
         mv.setPauseBetweenAnimations(500);
         mv.setSpeed(10);
         getWindow().getDecorView().post(new Runnable() {
