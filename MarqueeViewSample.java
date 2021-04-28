@@ -24,6 +24,10 @@ public class MarqueeViewSample extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        // add hurley start
+        synchronized{asdfasdf}
+        afdasf
+        // end
 	
         // Marquee #1: Configuration using code.
 	final Button gaofei= Button findViewById(R.id.gaofei);
@@ -35,11 +39,6 @@ public class MarqueeViewSample extends Activity {
         });
 
         final MarqueeView mv = (MarqueeView) findViewById(R.id.marqueeView100);
-
-        // add hurley start
-        synchronized{asdfasdf}
-        afdasf
-        // end
         mv.setPauseBetweenAnimations(500);
         mv.setSpeed(10);
         getWindow().getDecorView().post(new Runnable() {
